@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1706296047801,
@@ -12,6 +12,10 @@
                 {
                     "date": 1706296056600,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n <body>\n   <main>\n     <div class=\"container\">\n       <div class=\"image\">\n-        <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration-article\">\n+        <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n       </div>\n       <div class=\"general\">\n         <div class=\"learning\">\n           <p>Learning</p>\n"
+                },
+                {
+                    "date": 1706297414910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n <body>\n   <main>\n     <div class=\"container\">\n       <div class=\"image\">\n-        <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n+        <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">A\n       </div>\n       <div class=\"general\">\n         <div class=\"learning\">\n           <p>Learning</p>\n"
                 }
             ],
             "date": 1706296047801,
