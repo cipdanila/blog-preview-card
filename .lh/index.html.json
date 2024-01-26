@@ -1,0 +1,22 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1706296047801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1706296056600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n <body>\n   <main>\n     <div class=\"container\">\n       <div class=\"image\">\n-        <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration-article\">\n+        <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n       </div>\n       <div class=\"general\">\n         <div class=\"learning\">\n           <p>Learning</p>\n"
+                }
+            ],
+            "date": 1706296047801,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <!-- displays site properly based on user's device -->\n\n  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"./assets/images/favicon-32x32.png\">\n  <link rel=\"stylesheet\" href=\"style.css\">\n  <title>Frontend Mentor | Blog preview card</title>\n\n</head>\n<body>\n  <main>\n    <div class=\"container\">\n      <div class=\"image\">\n        <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration-article\">\n      </div>\n      <div class=\"general\">\n        <div class=\"learning\">\n          <p>Learning</p>\n        </div>\n        <div class=\"publish\">\n          <p>Published 21 Dec 2023</p>\n        </div>\n        <div class=\"title\">\n          <h1>HTML & CSS foundations</h1>\n        </div>\n        <div class=\"info\">\n          <p>\n            These languages are the backbone of every website, defining structure, content, and presentation.\n          </p>\n        </div>\n        <div class=\"avatar\">\n          <img src=\"./assets/images/image-avatar.webp\" alt=\"avatar\">\n          <p>Greg Hooper</p>\n        </div>\n      </div>\n    </div>\n  </main>\n\n  <footer>\n    <div class=\"attribution\">\n        Challenge by\n        <a\n            href=\"https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS\"\n            target=\"_blank\"\n            rel=\"noopener noreferer\"\n            >Frontend Mentor</a\n        >. Coded by <a href=\"https://github.com/cipdanila\" target=\"_blank\" rel=\"noopener noreferer\">Ciprian Danila</a>.\n    </div>\n</footer>\n</body>\n</html>"
+        }
+    ]
+}

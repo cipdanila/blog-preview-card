@@ -27,21 +27,17 @@ body {
 }
 
 .container {
-    min-width: 400px;
-    width: 30%;
-    margin: auto;
+    max-width: 400px;
+    margin: 4rem auto;
     padding: 1.25rem 0.625rem;
     border-radius: 1rem;
     border: 1px solid var(--black);
     box-shadow: 10px 10px var(--black);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: var(--white);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .image img {
@@ -105,16 +101,4 @@ body {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
-}
-
-@media (max-width: 576px) {
-    .container {
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 1440px) {
-    .container {
-        max-width: 1200px;
-    }
 }

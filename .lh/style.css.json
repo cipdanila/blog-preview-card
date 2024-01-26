@@ -1,0 +1,98 @@
+{
+    "sourceFile": "style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 20,
+            "patches": [
+                {
+                    "date": 1706296148854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1706296164667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     background-color: var(--yellow);\n }\n \n .container {\n-    min-width: 400px;\n+    max-width: 400px;\n     width: 30%;\n     margin: auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1706296180797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,12 +37,8 @@\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     background-color: var(--white);\n-    position: absolute;\n-    top: 50%;\n-    left: 50%;\n-    transform: translate(-50%, -50%);\n }\n \n .image img {\n     border-radius: 0.625rem;\n"
+                },
+                {
+                    "date": 1706296227095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,9 @@\n     box-shadow: 10px 10px var(--black);\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n+    justify-content: center;\n     background-color: var(--white);\n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1706296261484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,8 @@\n     box-shadow: 10px 10px var(--black);\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n-    justify-content: center;\n     background-color: var(--white);\n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1706296280716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,10 @@\n \n body {\n     display: flex;\n     flex-direction: column;\n+    align-items: center;\n+    justify-content: center;\n     font-family: 'Figtree', sans-serif;\n     font-size: 16px;\n     font-weight: 600;\n     background-color: var(--yellow);\n"
+                },
+                {
+                    "date": 1706296293586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,10 +36,10 @@\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     display: flex;\n-    flex-direction: column;\n-    align-items: center;\n+    /* flex-direction: column;\n+    align-items: center; */\n     background-color: var(--white);\n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1706296304376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,8 @@\n \n body {\n     display: flex;\n     flex-direction: column;\n-    align-items: center;\n-    justify-content: center;\n     font-family: 'Figtree', sans-serif;\n     font-size: 16px;\n     font-weight: 600;\n     background-color: var(--yellow);\n@@ -36,10 +34,10 @@\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     display: flex;\n-    /* flex-direction: column;\n-    align-items: center; */\n+    flex-direction: column;\n+    align-items: center;\n     background-color: var(--white);\n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1706296358133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     background-color: var(--yellow);\n }\n \n .container {\n-    max-width: 400px;\n+    max-width: 600px;\n     width: 30%;\n     margin: auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1706296373295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     background-color: var(--yellow);\n }\n \n .container {\n-    max-width: 600px;\n+    min-width: 400px;\n     width: 30%;\n     margin: auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1706296470504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n \n .container {\n     min-width: 400px;\n     width: 30%;\n-    margin: auto;\n+    margin: 4rem auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n"
+                },
+                {
+                    "date": 1706296484934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     background-color: var(--yellow);\n }\n \n .container {\n-    min-width: 400px;\n+    max-width: 400px;\n     width: 30%;\n     margin: 4rem auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1706296490411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n }\n \n .container {\n     max-width: 400px;\n-    width: 30%;\n+    /* width: 30%; */\n     margin: 4rem auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n"
+                },
+                {
+                    "date": 1706296533773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,8 @@\n }\n \n .container {\n     max-width: 400px;\n-    /* width: 30%; */\n     margin: 4rem auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n"
+                },
+                {
+                    "date": 1706296541859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n }\n \n .container {\n     max-width: 400px;\n-    margin: 4rem auto;\n+    margin: auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n"
+                },
+                {
+                    "date": 1706296600047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n }\n \n .container {\n     max-width: 400px;\n-    margin: auto;\n+    margin: 4rem auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n@@ -100,16 +100,4 @@\n }\n .attribution a {\n     color: hsl(228, 45%, 44%);\n }\n-\n-/* @media (max-width: 576px) {\n-    .container {\n-        max-width: 100%;\n-    }\n-}\n-\n-@media (min-width: 1440px) {\n-    .container {\n-        max-width: 1200px;\n-    }\n-} */\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706296743075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     display: flex;\n     flex-direction: column;\n+    justify-content: center;\n     align-items: center;\n     background-color: var(--white);\n }\n \n"
+                },
+                {
+                    "date": 1706296763766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n }\n \n .container {\n     max-width: 400px;\n-    margin: 4rem auto;\n+    margin: auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n"
+                },
+                {
+                    "date": 1706296783323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,25 +19,25 @@\n \n body {\n     display: flex;\n     flex-direction: column;\n+    justify-content: center;\n+    align-items: center;\n     font-family: 'Figtree', sans-serif;\n     font-size: 16px;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n \n .container {\n     max-width: 400px;\n-    margin: auto;\n+    margin: 4rem auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     display: flex;\n     flex-direction: column;\n-    justify-content: center;\n-    align-items: center;\n     background-color: var(--white);\n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1706296793423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n }\n \n .container {\n     max-width: 400px;\n-    margin: 4rem auto;\n+    margin: auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n"
+                },
+                {
+                    "date": 1706296799499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,25 +19,25 @@\n \n body {\n     display: flex;\n     flex-direction: column;\n-    justify-content: center;\n-    align-items: center;\n     font-family: 'Figtree', sans-serif;\n     font-size: 16px;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n \n .container {\n     max-width: 400px;\n-    margin: auto;\n+    margin: 4rem auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     display: flex;\n     flex-direction: column;\n+    justify-content: center;\n+    align-items: center;\n     background-color: var(--white);\n }\n \n .image img {\n"
+                }
+            ],
+            "date": 1706296148854,
+            "name": "Commit-0",
+            "content": "@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');\n\n:root {\n    /* Colors */\n    /* Primary */\n    --yellow: hsl(47, 88%, 63%);\n\n    /* Neutral */\n    --white: hsl(0, 0%, 100%);\n    --grey: hsl(0, 0%, 50%);\n    --black: hsl(0, 0%, 7%);\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    display: flex;\n    flex-direction: column;\n    font-family: 'Figtree', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    background-color: var(--yellow);\n}\n\n.container {\n    min-width: 400px;\n    width: 30%;\n    margin: auto;\n    padding: 1.25rem 0.625rem;\n    border-radius: 1rem;\n    border: 1px solid var(--black);\n    box-shadow: 10px 10px var(--black);\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    background-color: var(--white);\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n}\n\n.image img {\n    border-radius: 0.625rem;\n}\n\n.general {\n    display: flex;\n    flex-direction: column;\n    align-self: start;\n}\n\n.learning {\n    width: fit-content;\n    background-color: var(--yellow);\n    margin: 1rem;\n    padding: 5px 10px;\n    border-radius: 5px;\n    font-weight: 800;\n}\n\n.publish, .title, .info {\n    width: auto;\n    margin: 5px;\n    padding: 1px 10px;\n}\n\n.title h1 {\n    font-weight: 800;\n    font-size: 1.625rem;\n}\n\n.info p {\n    color: var(--grey);\n    line-height: 1.5;\n    font-weight: 100;\n}\n\n.avatar {\n    width: auto;\n    display: flex;\n    align-items: center;\n    margin: 5px;\n    padding: 1px 10px;\n}\n\n.avatar img {\n    width: 10%;\n}\n\n.avatar p {\n    display: inline-block;\n    margin: 5px;\n    padding: 1px 10px;\n    font-weight: 800;\n}\n\n.attribution {\n    font-size: 11px;\n    text-align: center;\n}\n.attribution a {\n    color: hsl(228, 45%, 44%);\n}\n\n/* @media (max-width: 576px) {\n    .container {\n        max-width: 100%;\n    }\n}\n\n@media (min-width: 1440px) {\n    .container {\n        max-width: 1200px;\n    }\n} */"
+        }
+    ]
+}
