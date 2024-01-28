@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 109,
+            "activePatchIndex": 123,
             "patches": [
                 {
                     "date": 1706296148854,
@@ -444,6 +444,62 @@
                 {
                     "date": 1706457921772,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,67 +11,75 @@\n     --black: hsl(0, 0%, 7%);\n }\n \n * {\n-    margin: 0;\n-    padding: 0;\n     box-sizing: border-box;\n }\n \n-body {\n-    display: flex;\n-    flex-direction: column;\n+body, html {\n+    margin: 0;\n+    padding: 0;\n+    height: 100%;\n     font-family: 'Figtree', sans-serif;\n-    font-size: 16px;\n+    font-size: 1rem;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n \n-.container {\n-    max-width: 400px;\n-    margin: 4rem auto;\n-    padding: 1.25rem 0.625rem;\n+main {\n+    display: flex;\n+    justify-content: center;\n+    align-items: center;\n+    height: 100%;\n+}\n+\n+.card {\n+    max-width: 375px;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n+    background-color: var(--white);\n     display: flex;\n     flex-direction: column;\n-    justify-content: center;\n     align-items: center;\n-    background-color: var(--white);\n }\n \n-.image img {\n+.image-card {\n+    text-align: center;\n+    padding-top: 1.25rem;\n+    padding-right: 1.25rem;\n+    padding-left: 1.25rem;\n+}\n+\n+.image-card img {\n+    max-width: 100%;\n+    height: auto;\n     border-radius: 0.625rem;\n }\n \n-.general {\n-    display: flex;\n-    flex-direction: column;\n-    align-self: start;\n+.text-card {\n+    padding: 0 1.25rem;\n }\n \n-.learning {\n-    width: fit-content;\n+#learning {\n+    display: inline-block;\n     background-color: var(--yellow);\n-    margin: 1rem;\n-    padding: 5px 10px;\n+    padding: 0.25rem 0.625rem;\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n-.publish, .title, .info {\n-    width: auto;\n-    margin: 5px;\n-    padding: 1px 10px;\n+#published {\n+    margin: 0;\n+    font-weight: 100;\n }\n \n-.title h1 {\n+.text-card h1 {\n     font-weight: 800;\n     font-size: 1.625rem;\n }\n \n-.info p {\n+#info {\n     color: var(--grey);\n     line-height: 1.5;\n     font-weight: 100;\n }\n@@ -79,10 +87,9 @@\n .avatar {\n     width: auto;\n     display: flex;\n     align-items: center;\n-    margin: 5px;\n-    padding: 1px 10px;\n+    padding: 10px 10px 20px 0;\n }\n \n .avatar img {\n     width: 10%;\n@@ -100,5 +107,5 @@\n     text-align: center;\n }\n .attribution a {\n     color: hsl(228, 45%, 44%);\n-}\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706469916309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,11 +44,12 @@\n }\n \n .image-card {\n     text-align: center;\n-    padding-top: 1.25rem;\n+    /* padding-top: 1.25rem;\n     padding-right: 1.25rem;\n-    padding-left: 1.25rem;\n+    padding-left: 1.25rem; */\n+    padding: 1rem;\n }\n \n .image-card img {\n     max-width: 100%;\n"
+                },
+                {
+                    "date": 1706470084201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n }\n \n #published {\n     margin: 0;\n-    font-weight: 100;\n+    font-weight:lighter;\n }\n \n .text-card h1 {\n     font-weight: 800;\n"
+                },
+                {
+                    "date": 1706470116961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n }\n \n #published {\n     margin: 0;\n-    font-weight:lighter;\n+    font-weight: 100;\n }\n \n .text-card h1 {\n     font-weight: 800;\n"
+                },
+                {
+                    "date": 1706470157458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,11 +44,8 @@\n }\n \n .image-card {\n     text-align: center;\n-    /* padding-top: 1.25rem;\n-    padding-right: 1.25rem;\n-    padding-left: 1.25rem; */\n     padding: 1rem;\n }\n \n .image-card img {\n"
+                },
+                {
+                    "date": 1706470271558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,9 @@\n .avatar p {\n     display: inline-block;\n     margin: 5px;\n     padding: 1px 10px;\n-    font-weight: 800;\n+    font-weight: 600;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706470296960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,9 @@\n .avatar p {\n     display: inline-block;\n     margin: 5px;\n     padding: 1px 10px;\n-    font-weight: 600;\n+    font-weight: 800;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706470315296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,10 +94,10 @@\n }\n \n .avatar p {\n     display: inline-block;\n-    margin: 5px;\n-    padding: 1px 10px;\n+    /* margin: 5px; */\n+    padding: 1px 0.625rem;\n     font-weight: 800;\n }\n \n .attribution {\n"
+                },
+                {
+                    "date": 1706470324332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n \n .avatar p {\n     display: inline-block;\n     /* margin: 5px; */\n-    padding: 1px 0.625rem;\n+    padding: 0.125rem 0.625rem;\n     font-weight: 800;\n }\n \n .attribution {\n"
+                },
+                {
+                    "date": 1706470372144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,8 @@\n }\n \n .avatar p {\n     display: inline-block;\n-    /* margin: 5px; */\n     padding: 0.125rem 0.625rem;\n     font-weight: 800;\n }\n \n"
+                },
+                {
+                    "date": 1706470422090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n .card {\n     max-width: 375px;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n-    box-shadow: 10px 10px var(--black);\n+    box-shadow: 0.5rem 0.5rem var(--black);\n     background-color: var(--white);\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n"
+                },
+                {
+                    "date": 1706470615771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n #learning {\n     display: inline-block;\n     background-color: var(--yellow);\n     padding: 0.25rem 0.625rem;\n-    border-radius: 5px;\n+    border-radius: 0.313rem;\n     font-weight: 800;\n }\n \n #published {\n"
+                },
+                {
+                    "date": 1706470655746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n .avatar {\n     width: auto;\n     display: flex;\n     align-items: center;\n-    padding: 10px 10px 20px 0;\n+    padding: 0.625rem 0.625rem 20px 0;\n }\n \n .avatar img {\n     width: 10%;\n"
+                },
+                {
+                    "date": 1706470665754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n .avatar {\n     width: auto;\n     display: flex;\n     align-items: center;\n-    padding: 0.625rem 0.625rem 20px 0;\n+    padding: 0.625rem 0.625rem 1.25rem 0;\n }\n \n .avatar img {\n     width: 10%;\n"
+                },
+                {
+                    "date": 1706470780282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n .avatar {\n     width: auto;\n     display: flex;\n     align-items: center;\n-    padding: 0.625rem 0.625rem 1.25rem 0;\n+    padding: 0.5rem 0.5rem 1rem 0;\n }\n \n .avatar img {\n     width: 10%;\n"
                 }
             ],
             "date": 1706296148854,

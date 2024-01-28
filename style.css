@@ -36,7 +36,7 @@ main {
     max-width: 375px;
     border-radius: 1rem;
     border: 1px solid var(--black);
-    box-shadow: 10px 10px var(--black);
+    box-shadow: 0.5rem 0.5rem var(--black);
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -45,9 +45,7 @@ main {
 
 .image-card {
     text-align: center;
-    padding-top: 1.25rem;
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
+    padding: 1rem;
 }
 
 .image-card img {
@@ -64,7 +62,7 @@ main {
     display: inline-block;
     background-color: var(--yellow);
     padding: 0.25rem 0.625rem;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     font-weight: 800;
 }
 
@@ -88,7 +86,7 @@ main {
     width: auto;
     display: flex;
     align-items: center;
-    padding: 10px 10px 20px 0;
+    padding: 0.5rem 0.5rem 1rem 0;
 }
 
 .avatar img {
@@ -97,8 +95,7 @@ main {
 
 .avatar p {
     display: inline-block;
-    margin: 5px;
-    padding: 1px 10px;
+    padding: 0.125rem 0.625rem;
     font-weight: 800;
 }
 
