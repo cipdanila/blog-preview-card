@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 123,
+            "activePatchIndex": 127,
             "patches": [
                 {
                     "date": 1706296148854,
@@ -500,6 +500,22 @@
                 {
                     "date": 1706470780282,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n .avatar {\n     width: auto;\n     display: flex;\n     align-items: center;\n-    padding: 0.625rem 0.625rem 1.25rem 0;\n+    padding: 0.5rem 0.5rem 1rem 0;\n }\n \n .avatar img {\n     width: 10%;\n"
+                },
+                {
+                    "date": 1706470922095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     --grey: hsl(0, 0%, 50%);\n     --black: hsl(0, 0%, 7%);\n }\n \n-* {\n+*, *::after, *::before {\n     box-sizing: border-box;\n }\n \n body, html {\n"
+                },
+                {
+                    "date": 1706470965468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,8 +75,12 @@\n     font-weight: 800;\n     font-size: 1.625rem;\n }\n \n+.text-card h1:hover {\n+    \n+}\n+\n #info {\n     color: var(--grey);\n     line-height: 1.5;\n     font-weight: 100;\n"
+                },
+                {
+                    "date": 1706470982863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n     font-size: 1.625rem;\n }\n \n .text-card h1:hover {\n-    \n+    color: var(--yellow);\n }\n \n #info {\n     color: var(--grey);\n"
+                },
+                {
+                    "date": 1706471000887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,9 @@\n }\n \n .text-card h1:hover {\n     color: var(--yellow);\n+    cursor: pointer;\n }\n \n #info {\n     color: var(--grey);\n"
                 }
             ],
             "date": 1706296148854,
