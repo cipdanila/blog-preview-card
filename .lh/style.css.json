@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 20,
+            "activePatchIndex": 109,
             "patches": [
                 {
                     "date": 1706296148854,
@@ -88,6 +88,362 @@
                 {
                     "date": 1706296799499,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,25 +19,25 @@\n \n body {\n     display: flex;\n     flex-direction: column;\n-    justify-content: center;\n-    align-items: center;\n     font-family: 'Figtree', sans-serif;\n     font-size: 16px;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n \n .container {\n     max-width: 400px;\n-    margin: auto;\n+    margin: 4rem auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     display: flex;\n     flex-direction: column;\n+    justify-content: center;\n+    align-items: center;\n     background-color: var(--white);\n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1706449616795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n \n-.container {\n+.card {\n     max-width: 400px;\n     margin: 4rem auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n"
+                },
+                {
+                    "date": 1706449867136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,16 +11,16 @@\n     --black: hsl(0, 0%, 7%);\n }\n \n * {\n-    margin: 0;\n-    padding: 0;\n     box-sizing: border-box;\n }\n \n body {\n     display: flex;\n     flex-direction: column;\n+    margin: 0;\n+    padding: 0;\n     font-family: 'Figtree', sans-serif;\n     font-size: 16px;\n     font-weight: 600;\n     background-color: var(--yellow);\n"
+                },
+                {
+                    "date": 1706449880478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n     display: flex;\n     flex-direction: column;\n     margin: 0;\n     padding: 0;\n+    height: 100%;\n     font-family: 'Figtree', sans-serif;\n     font-size: 16px;\n     font-weight: 600;\n     background-color: var(--yellow);\n"
+                },
+                {
+                    "date": 1706449887279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,13 +15,13 @@\n     box-sizing: border-box;\n }\n \n body {\n-    display: flex;\n-    flex-direction: column;\n     margin: 0;\n     padding: 0;\n     height: 100%;\n+    display: flex;\n+    flex-direction: column;\n     font-family: 'Figtree', sans-serif;\n     font-size: 16px;\n     font-weight: 600;\n     background-color: var(--yellow);\n"
+                },
+                {
+                    "date": 1706449911762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,14 +14,14 @@\n * {\n     box-sizing: border-box;\n }\n \n-body {\n+body, html {\n     margin: 0;\n     padding: 0;\n     height: 100%;\n     display: flex;\n-    flex-direction: column;\n+    \n     font-family: 'Figtree', sans-serif;\n     font-size: 16px;\n     font-weight: 600;\n     background-color: var(--yellow);\n"
+                },
+                {
+                    "date": 1706449923921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,10 @@\n     margin: 0;\n     padding: 0;\n     height: 100%;\n     display: flex;\n-    \n+    justify-content: center;\n+    align-items: center;\n     font-family: 'Figtree', sans-serif;\n     font-size: 16px;\n     font-weight: 600;\n     background-color: var(--yellow);\n"
+                },
+                {
+                    "date": 1706450024882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     display: flex;\n     justify-content: center;\n     align-items: center;\n     font-family: 'Figtree', sans-serif;\n-    font-size: 16px;\n+    font-size: 1rem;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n \n"
+                },
+                {
+                    "date": 1706450057828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     background-color: var(--yellow);\n }\n \n .card {\n-    max-width: 400px;\n+    width: 20rem;\n     margin: 4rem auto;\n     padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n"
+                },
+                {
+                    "date": 1706450067893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,10 +29,8 @@\n }\n \n .card {\n     width: 20rem;\n-    margin: 4rem auto;\n-    padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     display: flex;\n"
+                },
+                {
+                    "date": 1706450093007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,12 +32,8 @@\n     width: 20rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n-    display: flex;\n-    flex-direction: column;\n-    justify-content: center;\n-    align-items: center;\n     background-color: var(--white);\n }\n \n .image img {\n"
+                },
+                {
+                    "date": 1706450193817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,12 @@\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n }\n \n+.image-container {\n+    \n+}\n+\n .image img {\n     border-radius: 0.625rem;\n }\n \n"
+                },
+                {
+                    "date": 1706450200709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n     background-color: var(--white);\n }\n \n .image-container {\n-    \n+    text-align: center;\n }\n \n .image img {\n     border-radius: 0.625rem;\n"
+                },
+                {
+                    "date": 1706450212346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,9 @@\n }\n \n .image-container {\n     text-align: center;\n+    padding: 1.5rem;\n }\n \n .image img {\n     border-radius: 0.625rem;\n"
+                },
+                {
+                    "date": 1706450223295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,9 @@\n     padding: 1.5rem;\n }\n \n .image img {\n+    max-width: 100%;\n     border-radius: 0.625rem;\n }\n \n .general {\n"
+                },
+                {
+                    "date": 1706450247047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,11 @@\n     text-align: center;\n     padding: 1.5rem;\n }\n \n-.image img {\n+.image-container img {\n     max-width: 100%;\n+    height: auto;\n     border-radius: 0.625rem;\n }\n \n .general {\n"
+                },
+                {
+                    "date": 1706450257459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     text-align: center;\n     padding: 1.5rem;\n }\n \n-.image-container img {\n+img {\n     max-width: 100%;\n     height: auto;\n     border-radius: 0.625rem;\n }\n"
+                },
+                {
+                    "date": 1706450311918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     background-color: var(--yellow);\n }\n \n .card {\n-    width: 20rem;\n+    width: 25rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n"
+                },
+                {
+                    "date": 1706450321366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     background-color: var(--yellow);\n }\n \n .card {\n-    width: 25rem;\n+    width: 20rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n"
+                },
+                {
+                    "date": 1706450382283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n }\n \n-.image-container {\n+.image-card {\n     text-align: center;\n     padding: 1.5rem;\n }\n \n"
+                },
+                {
+                    "date": 1706450390271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     height: auto;\n     border-radius: 0.625rem;\n }\n \n-.general {\n+.text-card {\n     display: flex;\n     flex-direction: column;\n     align-self: start;\n }\n"
+                },
+                {
+                    "date": 1706450626933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,12 @@\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n \n+main {\n+    \n+}\n+\n .card {\n     width: 20rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n"
+                },
+                {
+                    "date": 1706450646890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,19 +18,19 @@\n body, html {\n     margin: 0;\n     padding: 0;\n     height: 100%;\n-    display: flex;\n-    justify-content: center;\n-    align-items: center;\n     font-family: 'Figtree', sans-serif;\n     font-size: 1rem;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n \n main {\n-    \n+    display: flex;\n+    justify-content: center;\n+    align-items: center;\n+    height: 100%;\n }\n \n .card {\n     width: 20rem;\n"
+                },
+                {
+                    "date": 1706450672321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,9 @@\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n+    display: flex;\n }\n \n .image-card {\n     text-align: center;\n"
+                },
+                {
+                    "date": 1706450680011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n     display: flex;\n+    flex-direction: column;\n }\n \n .image-card {\n     text-align: center;\n"
+                },
+                {
+                    "date": 1706450686854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,9 @@\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n     display: flex;\n     flex-direction: column;\n+    align-items: center;\n }\n \n .image-card {\n     text-align: center;\n"
+                },
+                {
+                    "date": 1706450695933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,9 @@\n     background-color: var(--white);\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n+    padding: 1rem;\n }\n \n .image-card {\n     text-align: center;\n"
+                },
+                {
+                    "date": 1706450720582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,11 +55,9 @@\n     border-radius: 0.625rem;\n }\n \n .text-card {\n-    display: flex;\n-    flex-direction: column;\n-    align-self: start;\n+    text-align: center;\n }\n \n .learning {\n     width: fit-content;\n"
+                },
+                {
+                    "date": 1706450736749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,8 @@\n     text-align: center;\n }\n \n .learning {\n-    width: fit-content;\n     background-color: var(--yellow);\n     margin: 1rem;\n     padding: 5px 10px;\n     border-radius: 5px;\n"
+                },
+                {
+                    "date": 1706450747320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n }\n \n .learning {\n     background-color: var(--yellow);\n-    margin: 1rem;\n+    margin-bottom: 1rem;\n     padding: 5px 10px;\n     border-radius: 5px;\n     font-weight: 800;\n }\n"
+                },
+                {
+                    "date": 1706450764931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n \n .learning {\n     background-color: var(--yellow);\n     margin-bottom: 1rem;\n-    padding: 5px 10px;\n+    padding: 0.25rem 0.5rem;\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n"
+                },
+                {
+                    "date": 1706450780615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n-.publish, .title, .info {\n+.publish, .title, .info, .avatar {\n     width: auto;\n     margin: 5px;\n     padding: 1px 10px;\n }\n"
+                },
+                {
+                    "date": 1706450791235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,11 +67,9 @@\n     font-weight: 800;\n }\n \n .publish, .title, .info, .avatar {\n-    width: auto;\n-    margin: 5px;\n-    padding: 1px 10px;\n+    margin-bottom: ;\n }\n \n .title h1 {\n     font-weight: 800;\n"
+                },
+                {
+                    "date": 1706450797730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n     font-weight: 800;\n }\n \n .publish, .title, .info, .avatar {\n-    margin-bottom: ;\n+    margin-bottom: 0.5rem;\n }\n \n .title h1 {\n     font-weight: 800;\n"
+                },
+                {
+                    "date": 1706450804381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,8 +73,9 @@\n \n .title h1 {\n     font-weight: 800;\n     font-size: 1.625rem;\n+    \n }\n \n .info p {\n     color: var(--grey);\n"
+                },
+                {
+                    "date": 1706450810317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,9 +73,9 @@\n \n .title h1 {\n     font-weight: 800;\n     font-size: 1.625rem;\n-    \n+    margin-bottom: 0.5rem;\n }\n \n .info p {\n     color: var(--grey);\n"
+                },
+                {
+                    "date": 1706450827590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,8 @@\n     font-weight: 100;\n }\n \n .avatar {\n-    width: auto;\n     display: flex;\n     align-items: center;\n     margin: 5px;\n     padding: 1px 10px;\n"
+                },
+                {
+                    "date": 1706450836513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,10 +85,8 @@\n \n .avatar {\n     display: flex;\n     align-items: center;\n-    margin: 5px;\n-    padding: 1px 10px;\n }\n \n .avatar img {\n     width: 10%;\n"
+                },
+                {
+                    "date": 1706450848748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,9 +88,9 @@\n     align-items: center;\n }\n \n .avatar img {\n-    width: 10%;\n+    width: 20px;\n }\n \n .avatar p {\n     display: inline-block;\n"
+                },
+                {
+                    "date": 1706450858945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,8 +89,10 @@\n }\n \n .avatar img {\n     width: 20px;\n+    height: auto;\n+    border: ;\n }\n \n .avatar p {\n     display: inline-block;\n"
+                },
+                {
+                    "date": 1706450867635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,9 +90,9 @@\n \n .avatar img {\n     width: 20px;\n     height: auto;\n-    border: ;\n+    border-radius: 50%;\n }\n \n .avatar p {\n     display: inline-block;\n"
+                },
+                {
+                    "date": 1706450875679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,8 +91,9 @@\n .avatar img {\n     width: 20px;\n     height: auto;\n     border-radius: 50%;\n+    margin-right: 0.5rem;\n }\n \n .avatar p {\n     display: inline-block;\n"
+                },
+                {
+                    "date": 1706450881889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,11 +95,8 @@\n     margin-right: 0.5rem;\n }\n \n .avatar p {\n-    display: inline-block;\n-    margin: 5px;\n-    padding: 1px 10px;\n     font-weight: 800;\n }\n \n .attribution {\n"
+                },
+                {
+                    "date": 1706450904595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,8 +98,12 @@\n .avatar p {\n     font-weight: 800;\n }\n \n+footer {\n+    \n+}\n+\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706450915754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,11 @@\n     font-weight: 800;\n }\n \n footer {\n-    \n+    margin-top: 2rem;\n+    text-align: center;\n+    font-size: 11px;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706450936516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,10 +100,8 @@\n }\n \n footer {\n     margin-top: 2rem;\n-    text-align: center;\n-    font-size: 11px;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1706451130956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,8 +68,9 @@\n }\n \n .publish, .title, .info, .avatar {\n     margin-bottom: 0.5rem;\n+    \n }\n \n .title h1 {\n     font-weight: 800;\n"
+                },
+                {
+                    "date": 1706451223812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n     text-align: center;\n }\n \n .learning {\n+    display: inline-block;\n     background-color: var(--yellow);\n     margin-bottom: 1rem;\n     padding: 0.25rem 0.5rem;\n     border-radius: 5px;\n@@ -68,9 +69,9 @@\n }\n \n .publish, .title, .info, .avatar {\n     margin-bottom: 0.5rem;\n-    \n+    text-align: left;\n }\n \n .title h1 {\n     font-weight: 800;\n"
+                },
+                {
+                    "date": 1706451281487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,8 +65,9 @@\n     margin-bottom: 1rem;\n     padding: 0.25rem 0.5rem;\n     border-radius: 5px;\n     font-weight: 800;\n+    text-align: left;\n }\n \n .publish, .title, .info, .avatar {\n     margin-bottom: 0.5rem;\n"
+                },
+                {
+                    "date": 1706451360443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     text-align: center;\n }\n \n .learning {\n-    display: inline-block;\n+    display: block;\n     background-color: var(--yellow);\n     margin-bottom: 1rem;\n     padding: 0.25rem 0.5rem;\n     border-radius: 5px;\n"
+                },
+                {
+                    "date": 1706451430048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,15 +59,15 @@\n     text-align: center;\n }\n \n .learning {\n-    display: block;\n+    display: inline-block; /* Afișează containerul ca bloc inline */\n     background-color: var(--yellow);\n     margin-bottom: 1rem;\n-    padding: 0.25rem 0.5rem;\n+    padding: 0.25rem 0.5rem; /* Aplică padding pentru a limita fundalul la dimensiunea textului */\n     border-radius: 5px;\n     font-weight: 800;\n-    text-align: left;\n+    text-align: left; /* Aliniază textul la stânga */\n }\n \n .publish, .title, .info, .avatar {\n     margin-bottom: 0.5rem;\n"
+                },
+                {
+                    "date": 1706451568706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     border-radius: 0.625rem;\n }\n \n .text-card {\n-    text-align: center;\n+    text-align: left;\n }\n \n .learning {\n     display: inline-block; /* Afișează containerul ca bloc inline */\n@@ -65,14 +65,12 @@\n     margin-bottom: 1rem;\n     padding: 0.25rem 0.5rem; /* Aplică padding pentru a limita fundalul la dimensiunea textului */\n     border-radius: 5px;\n     font-weight: 800;\n-    text-align: left; /* Aliniază textul la stânga */\n }\n \n .publish, .title, .info, .avatar {\n     margin-bottom: 0.5rem;\n-    text-align: left;\n }\n \n .title h1 {\n     font-weight: 800;\n"
+                },
+                {
+                    "date": 1706451608971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,12 +59,12 @@\n     text-align: left;\n }\n \n .learning {\n-    display: inline-block; /* Afișează containerul ca bloc inline */\n+    display: inline-block;\n     background-color: var(--yellow);\n     margin-bottom: 1rem;\n-    padding: 0.25rem 0.5rem; /* Aplică padding pentru a limita fundalul la dimensiunea textului */\n+    padding: 0.25rem 0.5rem;\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n"
+                },
+                {
+                    "date": 1706451641004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,8 @@\n }\n \n .image-card {\n     text-align: center;\n-    padding: 1.5rem;\n }\n \n img {\n     max-width: 100%;\n"
+                },
+                {
+                    "date": 1706451727945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n \n .learning {\n     display: inline-block;\n     background-color: var(--yellow);\n-    margin-bottom: 1rem;\n+    margin: 1rem 0;\n     padding: 0.25rem 0.5rem;\n     border-radius: 5px;\n     font-weight: 800;\n }\n"
+                },
+                {
+                    "date": 1706451923123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n .learning {\n     display: inline-block;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n-    padding: 0.25rem 0.5rem;\n+    padding: 0.1rem 0.5rem;\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n"
+                },
+                {
+                    "date": 1706452056488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n     text-align: left;\n }\n \n .learning {\n-    display: inline-block;\n+    width: fit-content;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n     padding: 0.1rem 0.5rem;\n     border-radius: 5px;\n"
+                },
+                {
+                    "date": 1706452084036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n .learning {\n     width: fit-content;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n-    padding: 0.1rem 0.5rem;\n+    padding: 5px 10px;\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n"
+                },
+                {
+                    "date": 1706452146622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     height: 100%;\n }\n \n .card {\n-    width: 20rem;\n+    max-width: 20rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n"
+                },
+                {
+                    "date": 1706452154363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     height: 100%;\n }\n \n .card {\n-    max-width: 20rem;\n+    max-width: 25rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n"
+                },
+                {
+                    "date": 1706452162189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     height: 100%;\n }\n \n .card {\n-    max-width: 25rem;\n+    max-width: 400px;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n"
+                },
+                {
+                    "date": 1706452355449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n     text-align: left;\n }\n \n .learning {\n-    width: fit-content;\n+    width: max-content;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n     padding: 5px 10px;\n     border-radius: 5px;\n"
+                },
+                {
+                    "date": 1706452365197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,8 @@\n     text-align: left;\n }\n \n .learning {\n-    width: max-content;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n     padding: 5px 10px;\n     border-radius: 5px;\n"
+                },
+                {
+                    "date": 1706452397286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     background-color: var(--white);\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n-    padding: 1rem;\n+    /* padding: 1rem; */\n }\n \n .image-card {\n     text-align: center;\n"
+                },
+                {
+                    "date": 1706452408568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     background-color: var(--white);\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n-    /* padding: 1rem; */\n+    padding: 1rem;\n }\n \n .image-card {\n     text-align: center;\n"
+                },
+                {
+                    "date": 1706452447604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     height: 100%;\n }\n \n .card {\n-    max-width: 400px;\n+    width: 20rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n@@ -58,8 +58,9 @@\n     text-align: left;\n }\n \n .learning {\n+    width: fit-content;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n     padding: 5px 10px;\n     border-radius: 5px;\n"
+                },
+                {
+                    "date": 1706452596850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n .learning {\n     width: fit-content;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n-    padding: 5px 10px;\n+    padding: 0.25rem 10px;\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n"
+                },
+                {
+                    "date": 1706452607050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n .learning {\n     width: fit-content;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n-    padding: 0.25rem 10px;\n+    padding: 0.25rem 0.625rem;\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n"
+                },
+                {
+                    "date": 1706452774709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n .text-card {\n     text-align: left;\n }\n \n-.learning {\n+.text-card p {\n     width: fit-content;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n     padding: 0.25rem 0.625rem;\n"
+                },
+                {
+                    "date": 1706452841397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,15 +57,16 @@\n .text-card {\n     text-align: left;\n }\n \n-.text-card p {\n-    width: fit-content;\n-    background-color: var(--yellow);\n-    margin: 1rem 0;\n-    padding: 0.25rem 0.625rem;\n-    border-radius: 5px;\n-    font-weight: 800;\n+.learning\n+{\n+  width: fit-content;\n+  background-color: var(--yellow);\n+  margin: 1rem;\n+  padding: 5px 10px;\n+  border-radius: 5px;\n+  font-weight: 800;\n }\n \n .publish, .title, .info, .avatar {\n     margin-bottom: 0.5rem;\n"
+                },
+                {
+                    "date": 1706452847699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,16 +57,15 @@\n .text-card {\n     text-align: left;\n }\n \n-.learning\n-{\n-  width: fit-content;\n-  background-color: var(--yellow);\n-  margin: 1rem;\n-  padding: 5px 10px;\n-  border-radius: 5px;\n-  font-weight: 800;\n+.text-card p {\n+    width: fit-content;\n+    background-color: var(--yellow);\n+    margin: 1rem 0;\n+    padding: 0.25rem 0.625rem;\n+    border-radius: 5px;\n+    font-weight: 800;\n }\n \n .publish, .title, .info, .avatar {\n     margin-bottom: 0.5rem;\n"
+                },
+                {
+                    "date": 1706452912809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n .text-card {\n     text-align: left;\n }\n \n-.text-card p {\n+.text-card p:first-child {\n     width: fit-content;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n     padding: 0.25rem 0.625rem;\n"
+                },
+                {
+                    "date": 1706452926568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n .text-card {\n     text-align: left;\n }\n \n-.text-card p:first-child {\n+.text-card p {\n     width: fit-content;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n     padding: 0.25rem 0.625rem;\n"
+                },
+                {
+                    "date": 1706452959673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n .text-card {\n     text-align: left;\n }\n \n-.text-card p {\n+#learning {\n     width: fit-content;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n     padding: 0.25rem 0.625rem;\n"
+                },
+                {
+                    "date": 1706453085443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');\n+@import url(\"https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap\");\n \n :root {\n     /* Colors */\n     /* Primary */\n@@ -14,13 +14,14 @@\n * {\n     box-sizing: border-box;\n }\n \n-body, html {\n+body,\n+html {\n     margin: 0;\n     padding: 0;\n     height: 100%;\n-    font-family: 'Figtree', sans-serif;\n+    font-family: \"Figtree\", sans-serif;\n     font-size: 1rem;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n@@ -66,10 +67,15 @@\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n-.publish, .title, .info, .avatar {\n-    margin-bottom: 0.5rem;\n+.publish,\n+.title,\n+.info,\n+.avatar {\n+    width: auto;\n+    margin: 5px;\n+    padding: 1px 10px;\n }\n \n .title h1 {\n     font-weight: 800;\n"
+                },
+                {
+                    "date": 1706453107868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import url(\"https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap\");\n+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');\n \n :root {\n     /* Colors */\n     /* Primary */\n@@ -14,14 +14,13 @@\n * {\n     box-sizing: border-box;\n }\n \n-body,\n-html {\n+body, html {\n     margin: 0;\n     padding: 0;\n     height: 100%;\n-    font-family: \"Figtree\", sans-serif;\n+    font-family: 'Figtree', sans-serif;\n     font-size: 1rem;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n@@ -58,24 +57,19 @@\n .text-card {\n     text-align: left;\n }\n \n-#learning {\n+.text-card p {\n     width: fit-content;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n     padding: 0.25rem 0.625rem;\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n-.publish,\n-.title,\n-.info,\n-.avatar {\n-    width: auto;\n-    margin: 5px;\n-    padding: 1px 10px;\n+.publish, .title, .info, .avatar {\n+    margin-bottom: 0.5rem;\n }\n \n .title h1 {\n     font-weight: 800;\n"
+                },
+                {
+                    "date": 1706453124237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,13 +57,13 @@\n .text-card {\n     text-align: left;\n }\n \n-.text-card p {\n+.learning {\n     width: fit-content;\n     background-color: var(--yellow);\n     margin: 1rem 0;\n-    padding: 0.25rem 0.625rem;\n+    padding: 5px 10px;\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n"
+                },
+                {
+                    "date": 1706453290921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');\n+@import url(\"https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap\");\n \n :root {\n     /* Colors */\n     /* Primary */\n@@ -14,13 +14,14 @@\n * {\n     box-sizing: border-box;\n }\n \n-body, html {\n+body,\n+html {\n     margin: 0;\n     padding: 0;\n     height: 100%;\n-    font-family: 'Figtree', sans-serif;\n+    font-family: \"Figtree\", sans-serif;\n     font-size: 1rem;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n@@ -54,9 +55,11 @@\n     border-radius: 0.625rem;\n }\n \n .text-card {\n-    text-align: left;\n+    display: flex;\n+    flex-direction: column;\n+    align-self: start;\n }\n \n .learning {\n     width: fit-content;\n@@ -66,9 +69,12 @@\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n-.publish, .title, .info, .avatar {\n+.publish,\n+.title,\n+.info,\n+.avatar {\n     margin-bottom: 0.5rem;\n }\n \n .title h1 {\n"
+                },
+                {
+                    "date": 1706453299236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import url(\"https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap\");\n+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');\n \n :root {\n     /* Colors */\n     /* Primary */\n@@ -14,14 +14,13 @@\n * {\n     box-sizing: border-box;\n }\n \n-body,\n-html {\n+body, html {\n     margin: 0;\n     padding: 0;\n     height: 100%;\n-    font-family: \"Figtree\", sans-serif;\n+    font-family: 'Figtree', sans-serif;\n     font-size: 1rem;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n@@ -55,11 +54,9 @@\n     border-radius: 0.625rem;\n }\n \n .text-card {\n-    display: flex;\n-    flex-direction: column;\n-    align-self: start;\n+    text-align: left;\n }\n \n .learning {\n     width: fit-content;\n@@ -69,12 +66,9 @@\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n-.publish,\n-.title,\n-.info,\n-.avatar {\n+.publish, .title, .info, .avatar {\n     margin-bottom: 0.5rem;\n }\n \n .title h1 {\n"
+                },
+                {
+                    "date": 1706453314687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');\n+@import url(\"https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap\");\n \n :root {\n     /* Colors */\n     /* Primary */\n@@ -14,13 +14,14 @@\n * {\n     box-sizing: border-box;\n }\n \n-body, html {\n+body,\n+html {\n     margin: 0;\n     padding: 0;\n     height: 100%;\n-    font-family: 'Figtree', sans-serif;\n+    font-family: \"Figtree\", sans-serif;\n     font-size: 1rem;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n@@ -54,9 +55,11 @@\n     border-radius: 0.625rem;\n }\n \n .text-card {\n-    text-align: left;\n+    display: flex;\n+    flex-direction: column;\n+    align-self: start;\n }\n \n .learning {\n     width: fit-content;\n@@ -66,9 +69,12 @@\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n-.publish, .title, .info, .avatar {\n+.publish,\n+.title,\n+.info,\n+.avatar {\n     margin-bottom: 0.5rem;\n }\n \n .title h1 {\n"
+                },
+                {
+                    "date": 1706453321904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,10 +55,8 @@\n     border-radius: 0.625rem;\n }\n \n .text-card {\n-    display: flex;\n-    flex-direction: column;\n     align-self: start;\n }\n \n .learning {\n"
+                },
+                {
+                    "date": 1706453346063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import url(\"https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap\");\n+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');\n \n :root {\n     /* Colors */\n     /* Primary */\n@@ -14,14 +14,13 @@\n * {\n     box-sizing: border-box;\n }\n \n-body,\n-html {\n+body, html {\n     margin: 0;\n     padding: 0;\n     height: 100%;\n-    font-family: \"Figtree\", sans-serif;\n+    font-family: 'Figtree', sans-serif;\n     font-size: 1rem;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n@@ -55,9 +54,9 @@\n     border-radius: 0.625rem;\n }\n \n .text-card {\n-    align-self: start;\n+    text-align: left;\n }\n \n .learning {\n     width: fit-content;\n@@ -67,12 +66,9 @@\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n-.publish,\n-.title,\n-.info,\n-.avatar {\n+.publish, .title, .info, .avatar {\n     margin-bottom: 0.5rem;\n }\n \n .title h1 {\n"
+                },
+                {
+                    "date": 1706453374505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     height: 100%;\n }\n \n .card {\n-    width: 20rem;\n+    max-width: 400px;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n"
+                },
+                {
+                    "date": 1706453464394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     height: 100%;\n }\n \n .card {\n-    max-width: 400px;\n+    max-width: 375px;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n"
+                },
+                {
+                    "date": 1706453600982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,9 @@\n     box-shadow: 10px 10px var(--black);\n     background-color: var(--white);\n     display: flex;\n     flex-direction: column;\n+    justify-content: center;\n     align-items: center;\n     padding: 1rem;\n }\n \n"
+                },
+                {
+                    "date": 1706453641310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,10 @@\n     border-radius: 0.625rem;\n }\n \n .text-card {\n-    text-align: left;\n+    /* text-align: left; */\n+    \n }\n \n .learning {\n     width: fit-content;\n"
+                },
+                {
+                    "date": 1706453651835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');\n+@import url(\"https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap\");\n \n :root {\n     /* Colors */\n     /* Primary */\n@@ -14,13 +14,14 @@\n * {\n     box-sizing: border-box;\n }\n \n-body, html {\n+body,\n+html {\n     margin: 0;\n     padding: 0;\n     height: 100%;\n-    font-family: 'Figtree', sans-serif;\n+    font-family: \"Figtree\", sans-serif;\n     font-size: 1rem;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n@@ -56,9 +57,11 @@\n }\n \n .text-card {\n     /* text-align: left; */\n-    \n+    display: flex;\n+    flex-direction: column;\n+    align-self: start;\n }\n \n .learning {\n     width: fit-content;\n@@ -68,9 +71,12 @@\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n-.publish, .title, .info, .avatar {\n+.publish,\n+.title,\n+.info,\n+.avatar {\n     margin-bottom: 0.5rem;\n }\n \n .title h1 {\n"
+                },
+                {
+                    "date": 1706453715777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n \n .learning {\n     width: fit-content;\n     background-color: var(--yellow);\n-    margin: 1rem 0;\n+    margin: 1rem;\n     padding: 5px 10px;\n     border-radius: 5px;\n     font-weight: 800;\n }\n"
+                },
+                {
+                    "date": 1706453983225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-@import url(\"https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap\");\n+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');\n \n :root {\n     /* Colors */\n     /* Primary */\n@@ -11,54 +11,41 @@\n     --black: hsl(0, 0%, 7%);\n }\n \n * {\n+    margin: 0;\n+    padding: 0;\n     box-sizing: border-box;\n }\n \n-body,\n-html {\n-    margin: 0;\n-    padding: 0;\n-    height: 100%;\n-    font-family: \"Figtree\", sans-serif;\n-    font-size: 1rem;\n+body {\n+    display: flex;\n+    flex-direction: column;\n+    font-family: 'Figtree', sans-serif;\n+    font-size: 16px;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n \n-main {\n-    display: flex;\n-    justify-content: center;\n-    align-items: center;\n-    height: 100%;\n-}\n-\n-.card {\n-    max-width: 375px;\n+.container {\n+    max-width: 400px;\n+    margin: 4rem auto;\n+    padding: 1.25rem 0.625rem;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n-    background-color: var(--white);\n     display: flex;\n     flex-direction: column;\n     justify-content: center;\n     align-items: center;\n-    padding: 1rem;\n+    background-color: var(--white);\n }\n \n-.image-card {\n-    text-align: center;\n-}\n-\n-img {\n-    max-width: 100%;\n-    height: auto;\n+.image img {\n     border-radius: 0.625rem;\n }\n \n-.text-card {\n-    /* text-align: left; */\n+.general {\n     display: flex;\n     flex-direction: column;\n     align-self: start;\n }\n@@ -71,19 +58,17 @@\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n-.publish,\n-.title,\n-.info,\n-.avatar {\n-    margin-bottom: 0.5rem;\n+.publish, .title, .info {\n+    width: auto;\n+    margin: 5px;\n+    padding: 1px 10px;\n }\n \n .title h1 {\n     font-weight: 800;\n     font-size: 1.625rem;\n-    margin-bottom: 0.5rem;\n }\n \n .info p {\n     color: var(--grey);\n@@ -91,27 +76,26 @@\n     font-weight: 100;\n }\n \n .avatar {\n+    width: auto;\n     display: flex;\n     align-items: center;\n+    margin: 5px;\n+    padding: 1px 10px;\n }\n \n .avatar img {\n-    width: 20px;\n-    height: auto;\n-    border-radius: 50%;\n-    margin-right: 0.5rem;\n+    width: 10%;\n }\n \n .avatar p {\n+    display: inline-block;\n+    margin: 5px;\n+    padding: 1px 10px;\n     font-weight: 800;\n }\n \n-footer {\n-    margin-top: 2rem;\n-}\n-\n .attribution {\n     font-size: 11px;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1706457921772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,67 +11,75 @@\n     --black: hsl(0, 0%, 7%);\n }\n \n * {\n-    margin: 0;\n-    padding: 0;\n     box-sizing: border-box;\n }\n \n-body {\n-    display: flex;\n-    flex-direction: column;\n+body, html {\n+    margin: 0;\n+    padding: 0;\n+    height: 100%;\n     font-family: 'Figtree', sans-serif;\n-    font-size: 16px;\n+    font-size: 1rem;\n     font-weight: 600;\n     background-color: var(--yellow);\n }\n \n-.container {\n-    max-width: 400px;\n-    margin: 4rem auto;\n-    padding: 1.25rem 0.625rem;\n+main {\n+    display: flex;\n+    justify-content: center;\n+    align-items: center;\n+    height: 100%;\n+}\n+\n+.card {\n+    max-width: 375px;\n     border-radius: 1rem;\n     border: 1px solid var(--black);\n     box-shadow: 10px 10px var(--black);\n+    background-color: var(--white);\n     display: flex;\n     flex-direction: column;\n-    justify-content: center;\n     align-items: center;\n-    background-color: var(--white);\n }\n \n-.image img {\n+.image-card {\n+    text-align: center;\n+    padding-top: 1.25rem;\n+    padding-right: 1.25rem;\n+    padding-left: 1.25rem;\n+}\n+\n+.image-card img {\n+    max-width: 100%;\n+    height: auto;\n     border-radius: 0.625rem;\n }\n \n-.general {\n-    display: flex;\n-    flex-direction: column;\n-    align-self: start;\n+.text-card {\n+    padding: 0 1.25rem;\n }\n \n-.learning {\n-    width: fit-content;\n+#learning {\n+    display: inline-block;\n     background-color: var(--yellow);\n-    margin: 1rem;\n-    padding: 5px 10px;\n+    padding: 0.25rem 0.625rem;\n     border-radius: 5px;\n     font-weight: 800;\n }\n \n-.publish, .title, .info {\n-    width: auto;\n-    margin: 5px;\n-    padding: 1px 10px;\n+#published {\n+    margin: 0;\n+    font-weight: 100;\n }\n \n-.title h1 {\n+.text-card h1 {\n     font-weight: 800;\n     font-size: 1.625rem;\n }\n \n-.info p {\n+#info {\n     color: var(--grey);\n     line-height: 1.5;\n     font-weight: 100;\n }\n@@ -79,10 +87,9 @@\n .avatar {\n     width: auto;\n     display: flex;\n     align-items: center;\n-    margin: 5px;\n-    padding: 1px 10px;\n+    padding: 10px 10px 20px 0;\n }\n \n .avatar img {\n     width: 10%;\n@@ -100,5 +107,5 @@\n     text-align: center;\n }\n .attribution a {\n     color: hsl(228, 45%, 44%);\n-}\n+}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1706296148854,

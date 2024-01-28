@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1706296047801,
@@ -16,6 +16,50 @@
                 {
                     "date": 1706297414910,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n <body>\n   <main>\n     <div class=\"container\">\n       <div class=\"image\">\n-        <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n+        <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">A\n       </div>\n       <div class=\"general\">\n         <div class=\"learning\">\n           <p>Learning</p>\n"
+                },
+                {
+                    "date": 1706449597649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,11 @@\n \n </head>\n <body>\n   <main>\n-    <div class=\"container\">\n+    <div class=\"card\">\n       <div class=\"image\">\n-        <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">A\n+        <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n       </div>\n       <div class=\"general\">\n         <div class=\"learning\">\n           <p>Learning</p>\n"
+                },
+                {
+                    "date": 1706450182421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n </head>\n <body>\n   <main>\n     <div class=\"card\">\n-      <div class=\"image\">\n+      <div class=\"image-container\">\n         <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n       </div>\n       <div class=\"general\">\n         <div class=\"learning\">\n"
+                },
+                {
+                    "date": 1706450371794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,12 +11,12 @@\n </head>\n <body>\n   <main>\n     <div class=\"card\">\n-      <div class=\"image-container\">\n+      <div class=\"image-card\">\n         <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n       </div>\n-      <div class=\"general\">\n+      <div class=\"text-card\">\n         <div class=\"learning\">\n           <p>Learning</p>\n         </div>\n         <div class=\"publish\">\n"
+                },
+                {
+                    "date": 1706452746751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,11 @@\n       <div class=\"image-card\">\n         <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n       </div>\n       <div class=\"text-card\">\n-        <div class=\"learning\">\n-          <p>Learning</p>\n-        </div>\n+        <p>Learning</p>\n+        <!-- <div class=\"learning\">\n+        </div> -->\n         <div class=\"publish\">\n           <p>Published 21 Dec 2023</p>\n         </div>\n         <div class=\"title\">\n"
+                },
+                {
+                    "date": 1706452832374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,11 @@\n       <div class=\"image-card\">\n         <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n       </div>\n       <div class=\"text-card\">\n-        <p>Learning</p>\n-        <!-- <div class=\"learning\">\n-        </div> -->\n+        <div class=\"learning\">\n+          <p>Learning</p>\n+        </div>\n         <div class=\"publish\">\n           <p>Published 21 Dec 2023</p>\n         </div>\n         <div class=\"title\">\n"
+                },
+                {
+                    "date": 1706452953394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,9 @@\n       <div class=\"image-card\">\n         <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n       </div>\n       <div class=\"text-card\">\n-        <div class=\"learning\">\n-          <p>Learning</p>\n-        </div>\n+        <p id=\"learning\">Learning</p>\n         <div class=\"publish\">\n           <p>Published 21 Dec 2023</p>\n         </div>\n         <div class=\"title\">\n"
+                },
+                {
+                    "date": 1706452993993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,13 +16,13 @@\n         <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n       </div>\n       <div class=\"text-card\">\n         <p id=\"learning\">Learning</p>\n+        <p>Published 21 Dec 2023</p>\n+        <h1>HTML & CSS foundations</h1>\n         <div class=\"publish\">\n-          <p>Published 21 Dec 2023</p>\n         </div>\n         <div class=\"title\">\n-          <h1>HTML & CSS foundations</h1>\n         </div>\n         <div class=\"info\">\n           <p>\n             These languages are the backbone of every website, defining structure, content, and presentation.\n"
+                },
+                {
+                    "date": 1706453044155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,12 +17,12 @@\n       </div>\n       <div class=\"text-card\">\n         <p id=\"learning\">Learning</p>\n         <p>Published 21 Dec 2023</p>\n-        <h1>HTML & CSS foundations</h1>\n         <div class=\"publish\">\n         </div>\n         <div class=\"title\">\n+          <h1>HTML & CSS foundations</h1>\n         </div>\n         <div class=\"info\">\n           <p>\n             These languages are the backbone of every website, defining structure, content, and presentation.\n"
+                },
+                {
+                    "date": 1706453129474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,13 @@\n       <div class=\"image-card\">\n         <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n       </div>\n       <div class=\"text-card\">\n-        <p id=\"learning\">Learning</p>\n-        <p>Published 21 Dec 2023</p>\n+        <div class=\"learning\">\n+          <p>Learning</p>\n+        </div>\n         <div class=\"publish\">\n+          <p>Published 21 Dec 2023</p>\n         </div>\n         <div class=\"title\">\n           <h1>HTML & CSS foundations</h1>\n         </div>\n"
+                },
+                {
+                    "date": 1706453990489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,13 +10,13 @@\n \n </head>\n <body>\n   <main>\n-    <div class=\"card\">\n-      <div class=\"image-card\">\n+    <div class=\"container\">\n+      <div class=\"image\">\n         <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n       </div>\n-      <div class=\"text-card\">\n+      <div class=\"general\">\n         <div class=\"learning\">\n           <p>Learning</p>\n         </div>\n         <div class=\"publish\">\n"
+                },
+                {
+                    "date": 1706457904203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,27 +10,17 @@\n \n </head>\n <body>\n   <main>\n-    <div class=\"container\">\n-      <div class=\"image\">\n+    <div class=\"card\">\n+      <div class=\"image-card\">\n         <img src=\"./assets/images/illustration-article.svg\" alt=\"illustration article\">\n       </div>\n-      <div class=\"general\">\n-        <div class=\"learning\">\n-          <p>Learning</p>\n-        </div>\n-        <div class=\"publish\">\n-          <p>Published 21 Dec 2023</p>\n-        </div>\n-        <div class=\"title\">\n-          <h1>HTML & CSS foundations</h1>\n-        </div>\n-        <div class=\"info\">\n-          <p>\n-            These languages are the backbone of every website, defining structure, content, and presentation.\n-          </p>\n-        </div>\n+      <div class=\"text-card\">\n+        <p id=\"learning\">Learning</p>\n+        <p id=\"published\">Published 21 Dec 2023</p>\n+        <h1>HTML & CSS foundations</h1>\n+        <p id=\"info\">These languages are the backbone of every website, defining structure, content, and presentation.</p>\n         <div class=\"avatar\">\n           <img src=\"./assets/images/image-avatar.webp\" alt=\"avatar\">\n           <p>Greg Hooper</p>\n         </div>\n"
                 }
             ],
             "date": 1706296047801,
