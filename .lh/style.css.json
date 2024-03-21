@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 130,
+            "activePatchIndex": 131,
             "patches": [
                 {
                     "date": 1706296148854,
@@ -528,6 +528,10 @@
                 {
                     "date": 1711050631419,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,9 @@\n }\n \n .card__title:hover {\n     color: var(--yellow);\n+    cursor: pointer;\n }\n \n /* Element: info */\n .card__info {\n"
+                },
+                {
+                    "date": 1711054855691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,5 +168,5 @@\n \n     .card__avatar {\n         width: 10%;\n     }\n-}\n\\ No newline at end of file\n+}\n"
                 }
             ],
             "date": 1706296148854,
