@@ -1,0 +1,66 @@
+{
+    "sourceFile": "v2/style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1711049551504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711049558152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,9 +153,9 @@\n     }\n \n     .card__published {\n         font-size: 0.85rem;\n-        margin-top: 0.5rem;\n+        margin-top: 0.2rem;\n     }\n \n     .card__info {\n         letter-spacing: 0.65px;\n"
+                },
+                {
+                    "date": 1711049567934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,9 +153,9 @@\n     }\n \n     .card__published {\n         font-size: 0.85rem;\n-        margin-top: 0.2rem;\n+        margin-bottom: 0.5rem;\n     }\n \n     .card__info {\n         letter-spacing: 0.65px;\n"
+                },
+                {
+                    "date": 1711049581005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,9 +153,8 @@\n     }\n \n     .card__published {\n         font-size: 0.85rem;\n-        margin-bottom: 0.5rem;\n     }\n \n     .card__info {\n         letter-spacing: 0.65px;\n"
+                },
+                {
+                    "date": 1711049641525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,8 +149,9 @@\n \n     .card__category {\n         padding: 0.5rem 0.75rem;\n         letter-spacing: 0.5px;\n+        margin-bottom: 0.2em;\n     }\n \n     .card__published {\n         font-size: 0.85rem;\n"
+                },
+                {
+                    "date": 1711049647904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,9 +149,9 @@\n \n     .card__category {\n         padding: 0.5rem 0.75rem;\n         letter-spacing: 0.5px;\n-        margin-bottom: 0.2em;\n+        margin-top: 0.2em;\n     }\n \n     .card__published {\n         font-size: 0.85rem;\n"
+                },
+                {
+                    "date": 1711049654794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,9 +149,8 @@\n \n     .card__category {\n         padding: 0.5rem 0.75rem;\n         letter-spacing: 0.5px;\n-        margin-top: 0.2em;\n     }\n \n     .card__published {\n         font-size: 0.85rem;\n"
+                },
+                {
+                    "date": 1711049753606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,9 @@\n \n /* Element: image */\n .card__image {\n     max-width: 100%;\n+    min-height: 100%;\n     padding: 0.5rem;\n     border-radius: 1.5rem;\n     margin-bottom: 3rem;\n }\n"
+                },
+                {
+                    "date": 1711049761747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n \n /* Element: image */\n .card__image {\n     max-width: 100%;\n-    min-height: 100%;\n+    max-height: 100%;\n     padding: 0.5rem;\n     border-radius: 1.5rem;\n     margin-bottom: 3rem;\n }\n"
+                },
+                {
+                    "date": 1711049782430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n \n /* Element: image */\n .card__image {\n     max-width: 100%;\n-    max-height: 100%;\n+    height: 200px;\n     padding: 0.5rem;\n     border-radius: 1.5rem;\n     margin-bottom: 3rem;\n }\n"
+                },
+                {
+                    "date": 1711049808040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n \n /* Element: image */\n .card__image {\n     max-width: 100%;\n-    height: 200px;\n+    min-height: 200px;\n     padding: 0.5rem;\n     border-radius: 1.5rem;\n     margin-bottom: 3rem;\n }\n"
+                },
+                {
+                    "date": 1711049814012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n \n /* Element: image */\n .card__image {\n     max-width: 100%;\n-    min-height: 200px;\n+    height: 200px;\n     padding: 0.5rem;\n     border-radius: 1.5rem;\n     margin-bottom: 3rem;\n }\n"
+                },
+                {
+                    "date": 1711049825388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,8 @@\n \n /* Element: image */\n .card__image {\n     max-width: 100%;\n-    height: 200px;\n     padding: 0.5rem;\n     border-radius: 1.5rem;\n     margin-bottom: 3rem;\n }\n"
+                }
+            ],
+            "date": 1711049551504,
+            "name": "Commit-0",
+            "content": "@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');\n\n/* Base styles */\n:root {\n    /* Colors */\n    /* Primary */\n    --yellow: hsl(47, 88%, 63%);\n    /* Neutral */\n    --white: hsl(0, 0%, 100%);\n    --grey: hsl(0, 0%, 50%);\n    --black: hsl(0, 0%, 7%);\n}\n\n*, *::after, *::before {\n    box-sizing: border-box;\n    margin: 0;\n    padding: 0;\n}\n\nbody, html {\n    font-family: 'Figtree', sans-serif;\n    font-size: 1rem;\n    font-weight: 600;\n    background-color: var(--yellow);\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    padding: 3.8rem 0;\n}\n\n/* Block: card */\n.card {\n    background-color: var(--white);\n    border-radius: 1.1rem;\n    border: 1px solid var(--black);\n    box-shadow: 0.5rem 0.5rem var(--black);\n    margin: 2rem 1.5rem;\n}\n\n/* Element: image */\n.card__image {\n    max-width: 100%;\n    padding: 0.5rem;\n    border-radius: 1.5rem;\n    margin-bottom: 3rem;\n}\n\n/* Element: content */\n.card__content {\n    padding: 1rem;\n}\n\n.card__text {\n    font-size: 0.7rem;\n    letter-spacing: 0.3px;\n    padding: 0 0.5rem;\n}\n\n/* Element: category */\n.card__category {\n    display: inline-block;\n    background-color: var(--yellow);\n    padding: 0.35rem 0.75rem;\n    border-radius: 0.313rem;\n    font-weight: 800;\n}\n\n/* Element: published */\n.card__published {\n    padding: 0.9rem 0;\n    font-weight: 100;\n}\n\n/* Element: title */\n.card__title {\n    font-weight: 800;\n    font-size: 1.25rem;\n    letter-spacing: 0.1px;\n}\n\n/* Element: info */\n.card__info {\n    color: var(--grey);\n    font-size: 0.9rem;\n    line-height: 1.5;\n    letter-spacing: -0.25px;\n    padding: 1rem 0;\n}\n\n/* Block: avatar */\n.card__author {\n    width: auto;\n    display: flex;\n    align-items: center;\n    padding: 0.5rem 0.5rem 0.5rem 0;\n}\n\n/* Element: avatar-image */\n.card__avatar {\n    width: 12%;\n}\n\n/* Element: author-name */\n.card__author-name {\n    display: inline-block;\n    padding: 0.125rem 0.625rem;\n    font-weight: 800;\n    font-size: 0.85rem;\n}\n\n\n/* Attribution */\n.attribution {\n    font-size: 11px;\n    text-align: center;\n    font-weight: 800;\n}\n\n.attribution a {\n    color: hsl(228, 45%, 44%);\n}\n\n@media (min-width: 400px) {\n    body {\n        width: 430px;\n        margin: 4rem;\n    }\n\n    .card__content {\n        padding: 0.9rem;\n    }\n\n    .card__image {\n        border-radius: 1.1rem;\n        padding: 0.5rem 0.4rem;\n        margin-bottom: 0.8rem;\n    }\n\n    .card__text {\n        font-size: 0.8rem;\n        letter-spacing: 0.01px;\n        padding: 0 0.5rem;\n    }\n\n    .card__title {\n        font-size: 1.5rem;\n    }\n\n    .card__category {\n        padding: 0.5rem 0.75rem;\n        letter-spacing: 0.5px;\n    }\n\n    .card__published {\n        font-size: 0.85rem;\n        margin-top: 0.5rem;\n    }\n\n    .card__info {\n        letter-spacing: 0.65px;\n        line-height: 1.7;\n    }\n\n    .card__avatar {\n        width: 10%;\n    }\n}"
+        }
+    ]
+}
