@@ -79,6 +79,11 @@ body, html {
     letter-spacing: 0.1px;
 }
 
+.card__title:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
 /* Element: info */
 .card__info {
     color: var(--grey);
